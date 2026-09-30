@@ -1,0 +1,262 @@
+/* layout */
+#header {
+    width: 100%;
+    height: 112px;
+    border-bottom: 1px solid #666;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+#contents {
+    width: 100%;
+    /* background-color: #ffeaea; */
+}
+#footer {
+    width: 100%;
+    height: 90px;
+    background-color: #96c8ca;
+}
+.container {
+    /* header를 영역을 가로 최대로 잡되, 내용부분이 들어갈 곳의 영역 잡기 */
+    width: 970px;
+    /* background-color: #aeefff; */
+    margin: 0 auto;
+}
+
+
+/********** header **********/
+.gnb {
+    text-align: right;
+}
+.gnb a {
+    display: inline-block;
+    font-size: 12px;
+    padding: 0 2px;
+}
+/* 원래 있던 장소에서 움직이는 것 */
+.gnb a:nth-child(1) {
+    position: relative;
+    top: -4px;
+    /* 위로 이동 */
+    border-right: 1px solid #666;
+    line-height: 1;
+    /* 보더로 준 선이 너무 길어서 line-height(행간)으로 줄임 */
+    padding-right: 8px;
+    /* 텍스트와 보더로 준 선과의 마진을 살짝 준 것 */
+}
+.gnb a:nth-child(2) {
+    position: relative;
+    top: -4px;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+#nav #logo {
+    margin-top: 8px;
+}
+#nav ul.lnb {
+    display: flex;
+}
+#nav ul.lnb li {}
+#nav ul.lnb li a {
+    display: block;
+    font-family: "Jost", sans-serif;
+    padding: 7px;
+    font-size: 15px;
+}
+#nav ul.lnb li:nth-child(7) a {
+    color: #dd1f7893;
+    /*
+    7번째 li의 자식인 a한테 색상 변경
+    a는 외동이라 몇 번째 수식이 안먹힘
+    */
+}
+#nav ul.lnb li:last-child a {
+    color: #dd1f1f;
+    padding-right: 0;
+    /*
+    7번째 li의 자식인 a한테 색상 변경
+    a는 외동이라 몇 번째 수식이 안먹힘
+    */
+}
+#nav ul.lnb li a:hover {
+    color: #1fddc4;
+}
+
+/********** main **********/
+.content01 {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    /* gap 또는 justify-content: space-between; */
+}
+.con01_left {
+    width: 480px;
+    height: 578px;
+    background-color: #1c005c;
+}
+.con01_right {
+    width: 480px;
+    height: 578px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.con01_right_box01 {
+    width: 235px;
+    height: 186px;
+    background-color: blue;
+}
+.con01_right_box02 {
+    width: 235px;
+    height: 186px;
+    background-color: #07077a;
+}
+.con01_right_box03 {
+    width: 480px;
+    height: 186px;
+    background-color: #5454d1;
+}
+.con01_right_box04 {
+    width: 480px;
+    height: 186px;
+    background-color: #c5c5f7;
+}
+
+.contents02 {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.cont02_box01{
+    width: 480px;
+    height: 188px;
+    background-color: #fc8181;
+}
+.cont02_box02{
+    width: 235px;
+    height: 188px;
+    background-color: #ff4242;
+}
+.cont02_box03{
+    width: 235px;
+    height: 188px;
+    background-color: #fa2121;
+}
+
+.content03 {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 150px;
+    
+}
+.cont03_left {
+    width: 480px;
+    height: 578px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.cont03_left_box01 {
+    width: 235px;
+    height: 382px;
+}
+.cont03_left_box01 .samll_box01 {
+    width: 235px;
+    height: 186px;
+    background-color: #1c03ff;
+    margin-bottom: 10px;
+}
+.cont03_left_box01 .samll_box02 {
+    width: 235px;
+    height: 186px;
+    background-color: #4935ff;
+}
+.cont03_left_box02 {
+    width: 235px;
+    height: 382px;
+    background-color: #aca2ff;
+}
+.cont03_left_box03 {
+    width: 480px;
+    height: 186px;
+    background-color: #dad6ff;
+}
+.cont03_right {
+    width: 480px;
+    height: 578px;
+    background-color: #dad6ff;
+}
+
+/********** footer **********/
+#footer > .container {
+    height: inherit; /* inherit: 부모의 height값을 상속 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul.footer_menu {
+    display: flex;
+}
+ul.footer_menu li {
+}
+ul.footer_menu li a {
+    display: block;
+    color: #fff;
+    font-size: 11px;
+    border-right: 1px solid #fff;
+    line-height: 1;
+    padding: 0 10px;
+    white-space: nowrap;
+}
+ul.footer_menu li a:hover {
+    color: aqua;
+}
+ul.footer_menu li:last-child a {
+    border-right: 0;
+}
+
+ul.copyright {
+    display: flex;
+}
+ul.copyright li {
+    color: #fff;
+    font-size: 11px;
+    border-right: 1px solid #fff;
+    line-height: 1;
+    padding: 0 10px;
+}
+ul.copyright li:last-child {
+    border-right: 0;
+}
+
+.select {
+    
+}
+.select select {
+    width: 150px;
+    height: 20px;
+    padding: 0 10px;
+    border: 0;
+}
+.select select option {
+    
+}
+
+/* web_standard */
+.web_standard {
+    width: 970px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.web_standard p {
+    padding: 0 10px;
+}

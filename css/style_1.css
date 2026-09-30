@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #0a0a0a;
+}
+body {
+    font-family: "Noto Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* layout */
+#header {
+    width: 970px;
+    height: 112px;
+    background-color: red;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 10;
+}
+#main {
+    width: 970px;
+    background-color: #d1f888;
+    margin: 0 auto;
+}
+#footer {
+    width: 970px;
+    height: 80px;
+    background-color: antiquewhite;
+    margin: 0;
+}
+
+/* header */
+#header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#logo {
+    justify-content: end;
+    align-items: flex-end;
+}
+#nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#gnb {
+    width: 320px;
+    height: 15px;
+    background-color: #ffb2b2;
+}
+#nav ul.gnb {
+    display: flex;
+}
+#nav ul.gnb li a {
+    display: block
+    padding: 8px 10px;
+    border-right: 1px solid #000;
+}
+
+#nav ul.lnb {
+    display: flex;
+}
+#nav ul.lnb li a {
+    display: block;
+    padding: 10px 15px;
+}
+
+/* main */
+/* main > contents01 */
+.contents01 {
+    width: 970px;
+    height: 578px;
+    display: flex;
+    gap: 10px;
+}
+.contents01 .left {
+    width: 480px;
+    height: 578px;
+}
+.contents01 .right {
+    width: 480px;
+    height: 578px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contents01 .top {
+    display: flex;
+    gap: 10px;
+}
+.contents01 .top img {
+    width: 235px;
+    height: 186px;
+}
+.contents01 > .right img {
+    width: 480px;
+    height: 186px;
+}
+
+
+/* main > contents02 */
+.contents02 {
+    width: 970px;
+    height: 188px;
+    display: flex;
+    gap: 10px;
+}
+.contents02 .left {
+    width: 480px;
+    height: 188px;
+}
+.contents01 .right {
+    width: 480px;
+    height: 188px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contents02 > .right img {
+    width: 235px;
+    height: 188px;
+}
+
+
